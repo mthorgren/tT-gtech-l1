@@ -2,7 +2,7 @@
 
 # Releases
 
-## v1.0.0 (not yet created)
+## v1.0.0
 * Finalizing image editing 
 * Updating text content for the entire site
 * Cleaning up code and commentary
