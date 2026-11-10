@@ -9,7 +9,7 @@
 * Reviewing semantics and availability
 * Fixing any validation errors
 
-## v0.9.0-rc1
+## v0.9.1-rc1
 Release candidate, pending live testing for v1.0.0 release
 
 * Full website structure and styling
