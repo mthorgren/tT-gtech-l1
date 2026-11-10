@@ -118,6 +118,7 @@ main {
     margin: 0 auto;
     padding: 1rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -131,6 +132,7 @@ main {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 1.5rem;
 }
@@ -148,7 +150,8 @@ nav a {
     background-position: center;
     padding: 4rem 1rem;
     text-align: center;
-    width: 100%;
+    width: 100vw; 
+    margin-left: calc(50% - 50vw);
     overflow: hidden;
 }
 
@@ -164,6 +167,7 @@ nav a {
 }
 
 .header-hero h1 {
+    word-break: break-word;
     position: relative;
     z-index: 2; 
 }
@@ -224,12 +228,33 @@ p {
 }
 
 .profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); 
+    align-items: start;
     gap: 2rem;
     padding: 2rem;
     border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-figure {
+    justify-self: center; 
+    align-self: center;   
+    width: 100%;
+    margin: 0;
+}
+
+.profile-image {
+    width: 100%;
+    min-width: 32px;
+    max-width: 220px; 
+    height: auto;
+    display: block;
+}
+
+.about-text {
+    min-width: 0; 
 }
 
 footer {
@@ -238,9 +263,8 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .profile-container {
-        flex-direction: row;
-        align-items: flex-start;
+    .profile-image {
+        min-width: 128px;
     }
 }
 
