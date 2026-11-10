@@ -157,6 +157,20 @@ p {
     margin-bottom: 1rem;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 footer {
     text-align: center;
     padding: 1.5rem 1rem;
