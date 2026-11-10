@@ -171,6 +171,15 @@ p {
     margin-bottom: 1rem;
 }
 
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
 footer {
     text-align: center;
     padding: 1.5rem 1rem;
