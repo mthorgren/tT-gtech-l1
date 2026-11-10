@@ -164,11 +164,40 @@ p {
     margin-top: 1.5rem;
 }
 
+.image-grid figure {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.comparison-card {
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.comparison-card h3 {
+    margin-bottom: 1rem;
+}
+
 .comparison-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.comparison-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
 }
 
 .profile-container {
